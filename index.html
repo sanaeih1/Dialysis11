@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت تغذیه بیماران دیالیزی</title>
+  <link href="https://cdn.jsdelivr.net/npm/vazir-font@28.0.0/dist/font-face.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/shabnam-font@5.0.0/dist/font-face.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="manifest" href="https://sanaeih1.github.io/Dialysis11/manifest.json">
+  <style>
+    body {
+      font-family: 'Shabnam', 'Vazir', sans-serif;
+      margin: 0;
+      padding: 8px;
+      background-color: #FFF8E7;
+      direction: rtl;
+      text-align: right;
+      color: #000000;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 15px 0;
+      font-weight: 500;
+    }
+
+    .intro-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #FFF8E7;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .intro-page h1 {
+      font-size: 2.8rem;
+      color: #000000;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-tabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .tab-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .intro-tab-button {
+      color: white;
+      padding: 18px 40px;
+      border-radius: 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+      height: 180px;
+      font-weight: bold;
+      background-color: #1a3c6d;
+      width: calc(50% - 5px);
+      max-width: 200px;
+    }
+
+    .intro-tab-button img {
+      width: min(10vw, 70px);
+      height: min(10vw, 70px);
+      min-width: 50px;
+      min-height: 50px;
+    }
+
+    .intro-tab-button.register { background-color: #0288d1; }
+    .intro-tab-button.intakeHistory { background-color: #f57c00; }
+    .intro-tab-button.videos { background-color: #7b1fa2; }
+    .intro-tab-button.tutorial { background-color: #388e3c; }
+    .intro-tab-button.settings { background-color: #455a64; }
+    .intro-tab-button.about { background-color: #e64a19; }
+
+    .intro-tab-button:hover {
+      filter: brightness(1.15);
+      transform: scale(1.05);
+    }
+
+    .content-area {
+      display: none;
+      flex-grow: 1;
+      margin-top: 20px;
+      padding-bottom: 15px;
+    }
+
+    .content-area.active {
+      display: block;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-button {
+      background-color: #7e57c2;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-button img {
+      width: min(10.5vw, 72px);
+      height: min(7vw, 48px);
+      min-width: 54px;
+      min-height: 36px;
+    }
+
+    .nav-button:hover {
+      background-color: #9575cd;
+    }
+
+    .tab-content {
+      display: none;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      margin: 8px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2, h3 {
+      color: #000000;
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 img, h3 img {
+      width: min(7vw, 52px);
+      height: min(7vw, 52px);
+      min-width: 36px;
+      min-height: 36px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #000000;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    small {
+      color: #666;
+      font-size: 0.9rem;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      overflow-y: auto;
+      max-height: 400px;
+      margin-top: 8px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    table, th, td {
+      border: 1px solid #e0e0e0;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: 500;
+    }
+
+    td {
+      min-width: 100px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 6px 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      width: 100%;
+      max-width: 180px;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    button img {
+      width: min(6vw, 44px);
+      height: min(6vw, 44px);
+      min-width: 32px;
+      min-height: 32px;
+    }
+
+    .add-button, .edit-button {
+      background-color: #66bb6a;
+      color: white;
+    }
+
+    .add-button:hover, .edit-button:hover {
+      background-color: #81c784;
+    }
+
+    .delete-button, .delete-all-button, .delete-all-data-button, .reset-settings-button {
+      background-color: #ef5350;
+      color: white;
+    }
+
+    .delete-button:hover, .delete-all-button:hover, .delete-all-data-button:hover, .reset-settings-button:hover {
+      background-color: #f44336;
+    }
+
+    .save-button {
+      background-color: #42a5f5;
+      color: white;
+    }
+
+    .save-button:hover {
+      background-color: #2196f3;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      background-color: #fafafa;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    label {
+      font-size: 1.1rem;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    label img {
+      width: min(18vw, 132px);
+      height: min(18vw, 132px);
+      min-width: 96px;
+      min-height: 96px;
+    }
+
+    .scrollable {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 8px 0;
+      background-color: #fafafa;
+      border-radius: 8px;
+    }
+
+    .scrollable p {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 1.1rem;
+      color: #000000;
+    }
+
+    .charts-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    .chart-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 200px;
+      height: 280px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      padding: 12px;
+      margin: 6px;
+    }
+
+    .chart-wrapper canvas {
+      max-width: 100%;
+      max-height: 180px;
+    }
+
+    .chart-wrapper span {
+      font-size: 1.8rem;
+      margin-top: 8px;
+      color: #000000;
+    }
+
+    #warnings {
+      margin: 15px 0;
+    }
+
+    .warning {
+      background-color: #ffcccb;
+      color: #d32f2f;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .error-message {
+      background-color: #ffcccb;
+      color: #d32f2f;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 8px 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .offline-message {
+      background-color: #ffcccb;
+      color: #d32f2f;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 8px 0;
+      text-align: center;
+      font-size: 1.1rem;
+      display: none;
+    }
+
+    .video-container {
+      margin: 15px 0;
+      background-color: white;
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+    }
+
+    .about-logo {
+      max-width: min(80vw, 480px);
+      max-height: min(80vw, 480px);
+      min-width: 320px;
+      min-height: 320px;
+      height: auto;
+      margin: 15px auto;
+      display: block;
+    }
+
+    #about {
+      overflow-y: auto;
+      max-height: 80vh;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #about iframe {
+      width: 100%;
+      max-width: 640px;
+      height: min(720px, 120vw);
+      border-radius: 8px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .search-container {
+      position: relative;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .search-container input {
+      padding-right: 40px;
+    }
+
+    .search-container img {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(7vw, 48px);
+      height: min(7vw, 48px);
+      min-width: 36px;
+      min-height: 36px;
+    }
+
+    #intakeHistory table {
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #1a3c6d;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 5px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .intro-page h1 {
+        font-size: 2.3rem;
+      }
+
+      .intro-tab-button {
+        font-size: 1rem;
+        padding: 15px 30px;
+        height: 160px;
+        width: calc(50% - 5px);
+        max-width: 175px;
+      }
+
+      .intro-tab-button img {
+        width: min(9.5vw, 66px);
+        height: min(9.5vw, 66px);
+        min-width: 46px;
+        min-height: 46px;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 8px;
+        min-width: 80px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 1rem;
+        max-width: 160px;
+      }
+
+      button img {
+        width: min(5.6vw, 40px);
+        height: min(5.6vw, 40px);
+        min-width: 28px;
+        min-height: 28px;
+      }
+
+      input, select {
+        font-size: 1rem;
+        padding: 8px;
+      }
+
+      form {
+        max-width: 320px;
+        padding: 12px;
+      }
+
+      h2, h3 {
+        font-size: 1.3rem;
+      }
+
+      h2 img, h3 img {
+        width: min(6.6vw, 48px);
+        height: min(6.6vw, 48px);
+        min-width: 32px;
+        min-height: 32px;
+      }
+
+      p, label {
+        font-size: 1rem;
+      }
+
+      label img {
+        width: min(16.8vw, 120px);
+        height: min(16.8vw, 120px);
+        min-width: 84px;
+        min-height: 84px;
+      }
+
+      .charts-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .chart-wrapper {
+        max-width: 180px;
+        height: 260px;
+      }
+
+      .chart-wrapper canvas {
+        max-height: 160px;
+      }
+
+      .chart-wrapper span {
+        font-size: 1.6rem;
+      }
+
+      .scrollable p {
+        font-size: 1rem;
+      }
+
+      .video-container {
+        max-width: 100%;
+      }
+
+      .about-logo {
+        max-width: min(72vw, 432px);
+        max-height: min(72vw, 432px);
+        min-width: 280px;
+        min-height: 280px;
+      }
+
+      .table-wrapper {
+        max-height: 300px;
+      }
+
+      .search-container img {
+        width: min(6.6vw, 44px);
+        height: min(6.6vw, 44px);
+        min-width: 32px;
+        min-height: 32px;
+      }
+
+      #about iframe {
+        height: min(640px, 108vw);
+      }
+
+      .nav-button img {
+        width: min(9.45vw, 65px);
+        height: min(6.3vw, 43px);
+        min-width: 48px;
+        min-height: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .intro-page h1 {
+        font-size: 2rem;
+      }
+
+      .intro-tab-button {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        height: 140px;
+        width: 100%;
+        max-width: 150px;
+      }
+
+      .intro-tab-button img {
+        width: min(9vw, 62px);
+        height: min(9vw, 62px);
+        min-width: 42px;
+        min-height: 42px;
+      }
+
+      table {
+        font-size: 0.8rem;
+      }
+
+      th, td {
+        padding: 6px;
+        min-width: 60px;
+      }
+
+      button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        max-width: 140px;
+      }
+
+      button img {
+        width: min(5.2vw, 36px);
+        height: min(5.2vw, 36px);
+        min-width: 24px;
+        min-height: 24px;
+      }
+
+      input, select {
+        font-size: 0.9rem;
+        padding: 6px;
+      }
+
+      form {
+        max-width: 280px;
+        padding: 10px;
+      }
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+
+      h2 img, h3 img {
+        width: min(6.4vw, 44px);
+        height: min(6.4vw, 44px);
+        min-width: 28px;
+        min-height: 28px;
+      }
+
+      p, label {
+        font-size: 0.9rem;
+      }
+
+      label img {
+        width: min(15.6vw, 108px);
+        height: min(15.6vw, 108px);
+        min-width: 72px;
+        min-height: 72px;
+      }
+
+      .charts-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .chart-wrapper {
+        max-width: 100%;
+        height: 240px;
+        margin: 8px 0;
+      }
+
+      .chart-wrapper canvas {
+        max-height: 150px;
+      }
+
+      .chart-wrapper span {
+        font-size: 1.4rem;
+      }
+
+      .scrollable p {
+        font-size: 0.9rem;
+      }
+
+      .video-container {
+        max-width: 100%;
+      }
+
+      .about-logo {
+        max-width: min(64vw, 384px);
+        max-height: min(64vw, 384px);
+        min-width: 240px;
+        min-height: 240px;
+      }
+
+      .table-wrapper {
+        max-height: 200px;
+      }
+
+      .search-container img {
+        width: min(6.4vw, 40px);
+        height: min(6.4vw, 40px);
+        min-width: 28px;
+        min-height: 28px;
+      }
+
+      #about iframe {
+        height: min(560px, 96vw);
+      }
+
+      .nav-button img {
+        width: min(9vw, 61px);
+        height: min(6vw, 41px);
+        min-width: 45px;
+        min-height: 30px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .intro-tab-button {
+        width: calc(33.33% - 10px);
+        max-width: 250px;
+      }
+
+      .intro-tab-button img {
+        width: min(9.5vw, 66px);
+        height: min(9.5vw, 66px);
+        min-width: 46px;
+        min-height: 46px;
+      }
+
+      .nav-button img {
+        width: min(9.45vw, 65px);
+        height: min(6.3vw, 43px);
+        min-width: 48px;
+        min-height: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+  </div>
+  <div class="intro-page" id="introPage">
+    <h1>مدیریت تغذیه بیماران دیالیزی</h1>
+    <div class="intro-tabs">
+      <div class="tab-row">
+        <button class="intro-tab-button register" onclick="openTab('dashboard')"><img src="https://sanaeih1.github.io/Dialysis11/assets/home.png" alt="home"> ثبت مواد غذایی</button>
+        <button class="intro-tab-button intakeHistory" onclick="openTab('intakeHistory')"><img src="https://sanaeih1.github.io/Dialysis11/assets/history.png" alt="history"> تاریخچه مصرف</button>
+      </div>
+      <div class="tab-row">
+        <button class="intro-tab-button videos" onclick="openTab('videos')"><img src="https://sanaeih1.github.io/Dialysis11/assets/video.png" alt="video"> فیلم‌های آموزشی</button>
+        <button class="intro-tab-button tutorial" onclick="openTab('tutorial')"><img src="https://sanaeih1.github.io/Dialysis11/assets/book.png" alt="book"> آموزش اپلیکیشن</button>
+      </div>
+      <div class="tab-row">
+        <button class="intro-tab-button settings" onclick="openTab('settings')"><img src="https://sanaeih1.github.io/Dialysis11/assets/settings.png" alt="settings"> تنظیمات</button>
+        <button class="intro-tab-button about" onclick="openTab('about')"><img src="https://sanaeih1.github.io/Dialysis11/assets/info.png" alt="info"> درباره ما</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content-area" id="contentArea">
+      <div class="nav-buttons">
+        <button class="nav-button" onclick="goBack()"><img src="https://sanaeih1.github.io/Dialysis11/assets/back.png" alt="back"> برگشت</button>
+      </div>
+      <h1>مدیریت تغذیه بیماران دیالیزی</h1>
+      <div id="errorMessage" class="error-message" style="display: none;"></div>
+      <section id="dashboard" class="tab-content">
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/home.png" alt="home"> مقادیر مواد غذایی</h2>
+        <button class="delete-all-data-button" onclick="resetAllData()"><img src="https://sanaeih1.github.io/Dialysis11/assets/trash-alt.png" alt="trash-alt"> پاک کردن تمام داده‌ها</button>
+        <div class="charts-container">
+          <div class="chart-wrapper">
+            <canvas id="sodiumChart"></canvas>
+            <span id="sodiumSticker">😊</span>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="potassiumChart"></canvas>
+            <span id="potassiumSticker">😊</span>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="phosphorusChart"></canvas>
+            <span id="phosphorusSticker">😊</span>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="proteinChart"></canvas>
+            <span id="proteinSticker">😊</span>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="waterChart"></canvas>
+            <span id="waterSticker">😊</span>
+          </div>
+        </div>
+        <div id="warnings"></div>
+        <div id="currentTotals" class="scrollable">
+          <p>سدیم مصرفی: <span id="totalSodiumMg">0</span> میلی‌گرم (حد مجاز: <span id="sodiumLimitDisplayMg"></span> میلی‌گرم)</p>
+          <p>پتاسیم مصرفی: <span id="totalPotassiumMg">0</span> میلی‌گرم (حد مجاز: <span id="potassiumLimitDisplayMg"></span> میلی‌گرم)</p>
+          <p>فسفر مصرفی: <span id="totalPhosphorusMg">0</span> میلی‌گرم (حد مجاز: <span id="phosphorusLimitDisplayMg"></span> میلی‌گرم)</p>
+          <p>پروتئین مصرفی: <span id="totalProteinMg">0</span> گرم (حد مجاز: <span id="proteinLimitDisplayMg"></span> گرم)</p>
+          <p>آب مصرفی: <span id="totalWaterMl">0</span> میلی‌لیتر (حد مجاز: <span id="waterLimitDisplayMl"></span> میلی‌لیتر)</p>
+          <p>مقدار ادرار ۲۴ ساعته: <span id="dailyUrineOutput">0</span> میلی‌لیتر</p>
+        </div>
+        <h3><img src="https://sanaeih1.github.io/Dialysis11/assets/food.png" alt="food"> ثبت مصرف غذا</h3>
+        <form id="foodIntakeForm" onsubmit="addIntake(event)">
+          <div class="search-container">
+            <label for="foodSearch"><img src="https://sanaeih1.github.io/Dialysis11/assets/search.png" alt="search"> جستجوی غذا:</label>
+            <input type="text" id="foodSearch" name="foodSearch" placeholder="نام غذا را وارد کنید">
+            <img src="https://sanaeih1.github.io/Dialysis11/assets/search.png" alt="search">
+          </div>
+          <label for="foodSelect"><img src="https://sanaeih1.github.io/Dialysis11/assets/list.png" alt="list"> انتخاب غذا:</label>
+          <select id="foodSelect" name="foodSelect" required>
+            <option value="">یک غذا انتخاب کنید</option>
+          </select>
+          <label for="quantity"><img src="https://sanaeih1.github.io/Dialysis11/assets/weight.png" alt="weight"> مقدار (واحد):</label>
+          <input type="number" id="quantity" name="quantity" step="0.01" required>
+          <label for="mealType"><img src="https://sanaeih1.github.io/Dialysis11/assets/clock.png" alt="clock"> وعده غذایی:</label>
+          <select id="mealType" name="mealType" required>
+            <option value="صبحانه">صبحانه</option>
+            <option value="ناهار">ناهار</option>
+            <option value="شام">شام</option>
+            <option value="میان‌وعده">میان‌وعده</option>
+          </select>
+          <button type="submit" class="add-button"><img src="https://sanaeih1.github.io/Dialysis11/assets/plus.png" alt="plus"> اضافه کردن</button>
+        </form>
+        <h3><img src="https://sanaeih1.github.io/Dialysis11/assets/water-glass.png" alt="water-glass"> ثبت مصرف آب (لیوان ۲۰۰ سی‌سی)</h3>
+        <form id="waterIntakeForm" onsubmit="addWaterIntake(event)">
+          <label for="waterCups"><img src="https://sanaeih1.github.io/Dialysis11/assets/water-drop.png" alt="water-drop"> تعداد لیوان‌ها:</label>
+          <input type="number" id="waterCups" name="waterCups" step="0.01" required>
+          <button type="submit" class="add-button"><img src="https://sanaeih1.github.io/Dialysis11/assets/plus.png" alt="plus"> اضافه کردن</button>
+        </form>
+        <h3><img src="https://sanaeih1.github.io/Dialysis11/assets/urine.png" alt="urine"> ثبت مقدار ادرار (میلی‌لیتر)</h3>
+        <form id="urineIntakeForm" onsubmit="addUrineOutput(event)">
+          <label for="urineAmount"><img src="https://sanaeih1.github.io/Dialysis11/assets/water-drop.png" alt="water-drop"> مقدار ادرار (میلی‌لیتر):</label>
+          <input type="number" id="urineAmount" name="urineAmount" step="0.01" required>
+          <button type="submit" class="add-button"><img src="https://sanaeih1.github.io/Dialysis11/assets/plus.png" alt="plus"> ثبت</button>
+        </form>
+      </section>
+      <section id="videos" class="tab-content">
+        <div id="offlineMessage" class="offline-message">شما آفلاین هستید. لطفاً برای مشاهده ویدیوها به اینترنت متصل شوید.</div>
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/video.png" alt="video"> فیلم‌های آموزشی</h2>
+        <div class="video-container">
+          <h3>رژیم خاص</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/vhf4z5z/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+        <div class="video-container">
+          <h3>فسفر</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/hlqzdki/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+        <div class="video-container">
+          <h3>پتاسیم</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/ifu44gz/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+        <div class="video-container">
+          <h3>سدیم و آب</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/lof5k6h/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+        <div class="video-container">
+          <h3>قند</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/hjc3195/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+      </section>
+      <section id="tutorial" class="tab-content">
+        <div id="tutorialOfflineMessage" class="offline-message">شما آفلاین هستید. لطفاً برای مشاهده ویدیوها به اینترنت متصل شوید.</div>
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/book.png" alt="book"> آموزش استفاده از اپلیکیشن</h2>
+        <div class="video-container">
+          <h3>راهنمای استفاده از اپلیکیشن تغذیه دیالیزی</h3>
+          <iframe class="video-iframe" data-src="https://www.aparat.com/video/video/embed/videohash/TUTORIAL123/vt/frame" allowfullscreen="true"></iframe>
+        </div>
+      </section>
+      <section id="intakeHistory" class="tab-content">
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/history.png" alt="history"> تاریخچه مصرف مواد غذایی شما</h2>
+        <button class="delete-all-button" onclick="deleteAllIntakes()"><img src="https://sanaeih1.github.io/Dialysis11/assets/trash.png" alt="trash"> حذف همه</button>
+        <div class="table-wrapper">
+          <div id="intakeTableBody"></div>
+        </div>
+      </section>
+      <section id="settings" class="tab-content">
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/settings.png" alt="settings"> تنظیمات</h2>
+        <form id="settingsForm" onsubmit="saveSettings(event)">
+          <label for="ibw"><img src="https://sanaeih1.github.io/Dialysis11/assets/weight.png" alt="weight"> وزن ایده‌آل (کیلوگرم):</label>
+          <input type="number" id="ibw" name="ibw" step="0.01" required oninput="updateLimitsBasedOnIBW()">
+          <label for="urineOutput"><img src="https://sanaeih1.github.io/Dialysis11/assets/water-drop.png" alt="water-drop"> مقدار ادرار روزانه (میلی‌لیتر):</label>
+          <input type="number" id="urineOutput" name="urineOutput" step="0.01">
+          <label for="fontSize"><img src="https://sanaeih1.github.io/Dialysis11/assets/font-size.png" alt="font-size"> اندازه فونت:</label>
+          <select id="fontSize" name="fontSize">
+            <option value="small">کوچک</option>
+            <option value="medium">متوسط</option>
+            <option value="large">بزرگ</option>
+          </select>
+          <label for="sodiumLimit"><img src="https://sanaeih1.github.io/Dialysis11/assets/sodium.png" alt="sodium"> حد مجاز سدیم (میلی‌گرم):</label>
+          <input type="number" id="sodiumLimit" name="sodiumLimit" step="0.01">
+          <label for="potassiumLimit"><img src="https://sanaeih1.github.io/Dialysis11/assets/potassium.png" alt="potassium"> حد مجاز پتاسیم (میلی‌گرم):</label>
+          <input type="number" id="potassiumLimit" name="potassiumLimit" step="0.01">
+          <label for="phosphorusLimit"><img src="https://sanaeih1.github.io/Dialysis11/assets/phosphorus.png" alt="phosphorus"> حد مجاز فسفر (میلی‌گرم):</label>
+          <input type="number" id="phosphorusLimit" name="phosphorusLimit" step="0.01">
+          <label for="proteinLimit"><img src="https://sanaeih1.github.io/Dialysis11/assets/protein.png" alt="protein"> حد مجاز پروتئین (گرم):</label>
+          <input type="number" id="proteinLimit" name="proteinLimit" step="0.01">
+          <label for="waterLimit"><img src="https://sanaeih1.github.io/Dialysis11/assets/water.png" alt="water"> حد مجاز آب (میلی‌لیتر):</label>
+          <input type="number" id="waterLimit" name="waterLimit" step="0.01">
+          <button type="submit" class="save-button"><img src="https://sanaeih1.github.io/Dialysis11/assets/save.png" alt="save"> ذخیره تنظیمات</button>
+          <button type="button" class="reset-settings-button" onclick="resetSettings()"><img src="https://sanaeih1.github.io/Dialysis11/assets/trash-alt.png" alt="trash-alt"> بازنشانی تنظیمات</button>
+        </form>
+      </section>
+      <section id="about" class="tab-content">
+        <h2><img src="https://sanaeih1.github.io/Dialysis11/assets/info.png" alt="info"> درباره ما</h2>
+        <img src="https://sanaeih1.github.io/Dialysis11/mums_logo.png" alt="لوگو دانشگاه علوم پزشکی مشهد" class="about-logo">
+        <iframe src="https://sanaeih1.github.io/Dialysis11/contact.html" title="ارتباط با ما"></iframe>
+      </section>
+    </div>
+  </div>
+  <script>
+    let pageHistory = [];
+
+    function generateDeviceId() {
+      const userAgent = navigator.userAgent;
+      const randomString = Math.random().toString(36).substring(2, 15);
+      return btoa(userAgent + randomString).substring(0, 20);
+    }
+
+    let deviceId = localStorage.getItem('deviceId');
+    if (!deviceId) {
+      deviceId = generateDeviceId();
+      localStorage.setItem('deviceId', deviceId);
+    }
+
+    const storageKey = `dialysisAppData_${deviceId}`;
+    let userData = {};
+    try {
+      userData = JSON.parse(localStorage.getItem(storageKey)) || {};
+    } catch (e) {
+      console.error('Error loading data from localStorage:', e);
+      userData = {};
+    }
+
+    userData = {
+      intakeHistory: userData.intakeHistory || [],
+      foodDB: userData.foodDB || [],
+      limits: userData.limits || {
+        sodium: 1500,
+        potassium: 2000,
+        phosphorus: 800,
+        protein: 80,
+        water: 750
+      },
+      ibw: userData.ibw || null,
+      urineOutput: userData.urineOutput || null,
+      fontSize: userData.fontSize || 'large'
+    };
+
+    let intakeHistory = userData.intakeHistory;
+    let foodDB = userData.foodDB;
+    let limits = userData.limits;
+    let charts = {};
+
+    async function loadFoodDatabaseFromJSON() {
+      const jsonURL = 'https://sanaeih1.github.io/Dialysis11/foods.json';
+      try {
+        const response = await fetch(jsonURL);
+        if (!response.ok) {
+          throw new Error('خطا در دریافت فایل JSON');
+        }
+        const newFoods = await response.json();
+        const requiredFields = ['name', 'category', 'sodium', 'potassium', 'phosphorus', 'water', 'bloodSugarImpact', 'restrictions', 'unit'];
+        const optionalFields = ['protein', 'carb', 'fat', 'kcal', 'calcium'];
+        const isValid = newFoods.every(food =>
+          requiredFields.every(field => food.hasOwnProperty(field)) &&
+          typeof food.sodium === 'number' &&
+          typeof food.potassium === 'number' &&
+          typeof food.phosphorus === 'number' &&
+          typeof food.water === 'number'
+        );
+
+        if (!isValid) {
+          showError('فایل JSON ساختار معتبری ندارد یا مقادیر نامعتبر هستند.');
+          return;
+        }
+
+        newFoods.forEach(food => {
+          food.protein = food.protein !== undefined ? food.protein : 0;
+          food.carb = food.carb !== undefined ? food.carb : 0;
+          food.fat = food.fat !== undefined ? food.fat : 0;
+          food.kcal = food.kcal !== undefined ? food.kcal : 0;
+          food.calcium = food.calcium !== undefined ? food.calcium : 0;
+        });
+
+        foodDB = [...foodDB, ...newFoods];
+        saveData();
+        populateFoodSelect();
+      } catch (e) {
+        showError('خطا در لود فایل JSON. لطفاً اتصال اینترنت یا آدرس فایل را بررسی کنید.');
+        console.error('Error loading JSON:', e);
+        if (!foodDB.length) {
+          foodDB = [
+            {
+              name: "غذای پیش‌فرض",
+              category: "متفرقه",
+              sodium: 0,
+              potassium: 0,
+              phosphorus: 0,
+              protein: 0,
+              water: 0,
+              carb: 0,
+              fat: 0,
+              kcal: 0,
+              calcium: 0,
+              bloodSugarImpact: "کم",
+              restrictions: { sodium: "کم", potassium: "کم", phosphorus: "کم", calcium: "کم" },
+              unit: "گرم"
+            }
+          ];
+          populateFoodSelect();
+        }
+      }
+    }
+
+    window.onload = function() {
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      Promise.all([
+        loadFoodDatabaseFromJSON(),
+        document.fonts.ready
+      ]).then(() => {
+        applySettings();
+        loadSettings();
+        populateFoodSelect();
+        displayIntakeHistory();
+        updateDashboard();
+        checkOnlineStatus();
+        if (loadingOverlay) loadingOverlay.style.display = 'none';
+      }).catch(error => {
+        console.error('Error during loading:', error);
+        showError('خطا در بارگذاری اپلیکیشن. لطفاً دوباره تلاش کنید.');
+        if (loadingOverlay) loadingOverlay.style.display = 'none';
+      });
+      const foodSearch = document.getElementById('foodSearch');
+      if (foodSearch) foodSearch.addEventListener('input', filterFoodSelect);
+      const ibw = document.getElementById('ibw');
+      if (ibw) ibw.addEventListener('input', updateLimitsBasedOnIBW);
+      window.addEventListener('online', checkOnlineStatus);
+      window.addEventListener('offline', checkOnlineStatus);
+    };
+
+    function checkOnlineStatus() {
+      const offlineMessage = document.getElementById('offlineMessage');
+      const tutorialOfflineMessage = document.getElementById('tutorialOfflineMessage');
+      const iframes = document.getElementsByClassName('video-iframe');
+      if (!navigator.onLine) {
+        if (offlineMessage) offlineMessage.style.display = 'block';
+        if (tutorialOfflineMessage) tutorialOfflineMessage.style.display = 'block';
+        for (let iframe of iframes) {
+          iframe.src = '';
+        }
+      } else {
+        if (offlineMessage) offlineMessage.style.display = 'none';
+        if (tutorialOfflineMessage) tutorialOfflineMessage.style.display = 'none';
+        for (let iframe of iframes) {
+          const dataSrc = iframe.getAttribute('data-src');
+          if (dataSrc) iframe.src = dataSrc;
+        }
+      }
+    }
+
+    function applySettings() {
+      applyFontSize(userData.fontSize);
+    }
+
+    function loadSettings() {
+      if (userData.ibw) {
+        const ibwInput = document.getElementById('ibw');
+        if (ibwInput) {
+          ibwInput.value = userData.ibw.toFixed(2);
+          updateLimitsBasedOnIBW();
+        }
+      }
+      if (userData.urineOutput) {
+        const urineOutputInput = document.getElementById('urineOutput');
+        if (urineOutputInput) urineOutputInput.value = userData.urineOutput.toFixed(2);
+      }
+      const fontSizeSelect = document.getElementById('fontSize');
+      if (fontSizeSelect) fontSizeSelect.value = userData.fontSize || 'large';
+      displayLimits();
+    }
+
+    function updateLimitsBasedOnIBW() {
+      const ibwInput = document.getElementById('ibw');
+      const urineOutputInput = document.getElementById('urineOutput');
+      if (!ibwInput || !urineOutputInput) return;
+      const ibw = parseFloat(ibwInput.value);
+      const urineOutput = parseFloat(urineOutputInput.value) || 0;
+
+      if (!isNaN(ibw) && ibw > 0) {
+        limits = {
+          sodium: 1500,
+          potassium: parseFloat((40 * ibw).toFixed(2)),
+          phosphorus: parseFloat((17 * ibw).toFixed(2)),
+          protein: parseFloat((1.2 * ibw).toFixed(2)),
+          water: parseFloat((750 + urineOutput).toFixed(2))
+        };
+        userData.ibw = ibw;
+        userData.urineOutput = urineOutput;
+        displayLimits();
+        updateDashboard();
+        saveData();
+      }
+    }
+
+    function showError(message) {
+      const errorDiv = document.getElementById('errorMessage');
+      if (errorDiv) {
+        errorDiv.textContent = message;
+        errorDiv.style.display = 'block';
+        setTimeout(() => {
+          errorDiv.style.display = 'none';
+        }, 5000);
+      }
+    }
+
+    function applyFontSize(size) {
+      let fontSize;
+      switch (size) {
+        case 'small': fontSize = '0.9rem'; break;
+        case 'medium': fontSize = '1rem'; break;
+        case 'large': fontSize = '1.2rem'; break;
+        default: fontSize = '1.2rem';
+      }
+      document.documentElement.style.fontSize = fontSize;
+      userData.fontSize = size;
+      saveData();
+    }
+
+    function saveData() {
+      try {
+        userData.intakeHistory = intakeHistory;
+        userData.foodDB = foodDB;
+        userData.limits = limits;
+        const ibwInput = document.getElementById('ibw');
+        userData.ibw = ibwInput ? parseFloat(ibwInput.value) || userData.ibw || null : userData.ibw;
+        const urineOutputInput = document.getElementById('urineOutput');
+        userData.urineOutput = urineOutputInput ? parseFloat(urineOutputInput.value) || userData.urineOutput || null : userData.urineOutput;
+        const fontSizeSelect = document.getElementById('fontSize');
+        userData.fontSize = fontSizeSelect ? fontSizeSelect.value || userData.fontSize || 'large' : userData.fontSize;
+        localStorage.setItem(storageKey, JSON.stringify(userData));
+      } catch (e) {
+        showError('خطا در ذخیره‌سازی داده‌ها. لطفاً دوباره تلاش کنید.');
+        console.error('Error saving data to localStorage:', e);
+      }
+    }
+
+    function saveSettings(event) {
+      event.preventDefault();
+      const ibwInput = document.getElementById('ibw');
+      const urineOutputInput = document.getElementById('urineOutput');
+      if (!ibwInput || !urineOutputInput) return;
+      const ibw = parseFloat(ibwInput.value);
+      const urineOutput = parseFloat(urineOutputInput.value) || 0;
+
+      if (isNaN(ibw) || ibw <= 0) {
+        showError('لطفاً وزن ایده‌آل معتبری وارد کنید.');
+        return;
+      }
+
+      userData.ibw = ibw;
+      userData.urineOutput = urineOutput;
+
+      limits = {
+        sodium: parseFloat(document.getElementById('sodiumLimit').value) || 1500,
+        potassium: parseFloat(document.getElementById('potassiumLimit').value) || parseFloat((40 * ibw).toFixed(2)),
+        phosphorus: parseFloat(document.getElementById('phosphorusLimit').value) || parseFloat((17 * ibw).toFixed(2)),
+        protein: parseFloat(document.getElementById('proteinLimit').value) || parseFloat((1.2 * ibw).toFixed(2)),
+        water: parseFloat(document.getElementById('waterLimit').value) || parseFloat((750 + urineOutput).toFixed(2))
+      };
+
+      saveData();
+      displayLimits();
+      updateDashboard();
+      applyFontSize(document.getElementById('fontSize').value);
+      showError('تنظیمات با موفقیت ذخیره شد.');
+    }
+
+    function resetSettings() {
+      if (confirm('آیا مطمئن هستید که می‌خواهید تنظیمات را به حالت پیش‌فرض بازنشانی کنید؟')) {
+        userData.limits = {
+          sodium: 1500,
+          potassium: 2000,
+          phosphorus: 800,
+          protein: 80,
+          water: 750
+        };
+        userData.ibw = null;
+        userData.urineOutput = null;
+        userData.fontSize = 'large';
+        saveData();
+        loadSettings();
+        applySettings();
+        updateDashboard();
+        showError('تنظیمات با موفقیت بازنشانی شد.');
+      }
+    }
+
+    function resetAllData() {
+      if (confirm('آیا مطمئن هستید که می‌خواهید تمام داده‌های تاریخچه و غذاها را پاک کنید؟ تنظیمات حفظ خواهند شد.')) {
+        intakeHistory = [];
+        foodDB = [];
+        loadFoodDatabaseFromJSON();
+        saveData();
+        populateFoodSelect();
+        displayIntakeHistory();
+        updateDashboard();
+        showError('تمام داده‌های تاریخچه و غذاها با موفقیت پاک شدند.');
+      }
+    }
+
+    function openTab(tabName) {
+      document.getElementById('introPage').style.display = 'none';
+      document.getElementById('contentArea').style.display = 'block';
+      const tabContents = document.getElementsByClassName('tab-content');
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+      }
+      const tab = document.getElementById(tabName);
+      if (tab) tab.classList.add('active');
+      pageHistory.push(tabName);
+      if (tabName === 'videos' || tabName === 'tutorial') {
+        checkOnlineStatus();
+      }
+    }
+
+    function goBack() {
+      if (pageHistory.length > 1) {
+        pageHistory.pop();
+        const previousPage = pageHistory[pageHistory.length - 1];
+        openTab(previousPage);
+      } else {
+        document.getElementById('introPage').style.display = 'block';
+        document.getElementById('contentArea').style.display = 'none';
+        const tabContents = document.getElementsByClassName('tab-content');
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.remove('active');
+        }
+        pageHistory = [];
+      }
+    }
+
+    function populateFoodSelect(searchTerm = '') {
+      const foodSelect = document.getElementById('foodSelect');
+      if (!foodSelect) return;
+      foodSelect.innerHTML = '<option value="">یک غذا انتخاب کنید</option>';
+      foodDB
+        .filter(food => searchTerm === '' || food.name.toLowerCase().includes(searchTerm.toLowerCase()))
+        .forEach((food, index) => {
+          const option = document.createElement('option');
+          option.value = index;
+          option.textContent = `${food.name} (${food.unit})`;
+          foodSelect.appendChild(option);
+        });
+    }
+
+    function filterFoodSelect() {
+      const foodSearch = document.getElementById('foodSearch');
+      if (foodSearch) {
+        const searchTerm = foodSearch.value;
+        populateFoodSelect(searchTerm);
+      }
+    }
+
+    function addIntake(event) {
+      event.preventDefault();
+      const foodSelect = document.getElementById('foodSelect');
+      const quantityInput = document.getElementById('quantity');
+      const mealTypeSelect = document.getElementById('mealType');
+      if (!foodSelect || !quantityInput || !mealTypeSelect) return;
+
+      const foodIndex = parseInt(foodSelect.value, 10);
+      const quantity = parseFloat(quantityInput.value);
+      const mealType = mealTypeSelect.value;
+
+      if (isNaN(foodIndex) || foodIndex < 0 || foodIndex >= foodDB.length) {
+        showError('لطفاً یک غذا انتخاب کنید.');
+        return;
+      }
+      if (isNaN(quantity) || quantity <= 0) {
+        showError('لطفاً مقدار معتبری وارد کنید.');
+        return;
+      }
+      if (!mealType) {
+        showError('لطفاً یک وعده غذایی انتخاب کنید.');
+        return;
+      }
+
+      const food = foodDB[foodIndex];
+      let date;
+      try {
+        const persianDateInstance = new persianDate();
+        date = persianDateInstance.format('dddd D MMMM YYYY');
+      } catch (e) {
+        console.error('Error with persianDate:', e);
+        date = new Date().toLocaleDateString('fa-IR');
+      }
+
+      const timestamp = new Date().getTime();
+
+      const intake = {
+        type: 'food',
+        date: date,
+        timestamp: timestamp,
+        mealType: mealType,
+        food: food.name,
+        quantity: quantity,
+        unit: food.unit,
+        sodium: parseFloat(((food.sodium || 0) * quantity).toFixed(2)),
+        potassium: parseFloat(((food.potassium || 0) * quantity).toFixed(2)),
+        phosphorus: parseFloat(((food.phosphorus || 0) * quantity).toFixed(2)),
+        protein: parseFloat(((food.protein || 0) * quantity).toFixed(2)),
+        water: parseFloat(((food.water || 0) * quantity).toFixed(2)),
+        urine: 0
+      };
+
+      intakeHistory.push(intake);
+      saveData();
+      displayIntakeHistory();
+      updateDashboard();
+
+      foodSelect.selectedIndex = 0;
+      quantityInput.value = '';
+      mealTypeSelect.selectedIndex = 0;
+      const foodSearch = document.getElementById('foodSearch');
+      if (foodSearch) {
+        foodSearch.value = '';
+        populateFoodSelect();
+      }
+    }
+
+    function addWaterIntake(event) {
+      event.preventDefault();
+      const waterCupsInput = document.getElementById('waterCups');
+      if (!waterCupsInput) return;
+      const cups = parseFloat(waterCupsInput.value);
+
+      if (isNaN(cups) || cups <= 0) {
+        showError('لطفاً تعداد لیوان‌ها را به صورت معتبر وارد کنید.');
+        return;
+      }
+
+      const waterAmount = parseFloat((cups * 200).toFixed(2));
+
+      let date;
+      try {
+        const persianDateInstance = new persianDate();
+        date = persianDateInstance.format('dddd D MMMM YYYY');
+      } catch (e) {
+        console.error('Error with persianDate:', e);
+        date = new Date().toLocaleDateString('fa-IR');
+      }
+
+      const timestamp = new Date().getTime();
+
+      const intake = {
+        type: 'water',
+        date: date,
+        timestamp: timestamp,
+        mealType: '-',
+        food: `آب (${cups} لیوان)`,
+        quantity: cups,
+        unit: 'لیوان',
+        sodium: 0,
+        potassium: 0,
+        phosphorus: 0,
+        protein: 0,
+        water: waterAmount,
+        urine: 0
+      };
+
+      intakeHistory.push(intake);
+      saveData();
+      displayIntakeHistory();
+      updateDashboard();
+
+      waterCupsInput.value = '';
+    }
+
+    function addUrineOutput(event) {
+      event.preventDefault();
+      const urineAmountInput = document.getElementById('urineAmount');
+      if (!urineAmountInput) return;
+      const urineAmount = parseFloat(urineAmountInput.value);
+
+      if (isNaN(urineAmount) || urineAmount <= 0) {
+        showError('لطفاً مقدار معتبری برای ادرار وارد کنید.');
+        return;
+      }
+
+      let date;
+      try {
+        const persianDateInstance = new persianDate();
+        date = persianDateInstance.format('dddd D MMMM YYYY');
+      } catch (e) {
+        console.error('Error with persianDate:', e);
+        date = new Date().toLocaleDateString('fa-IR');
+      }
+
+      const timestamp = new Date().getTime();
+
+      const intake = {
+        type: 'urine',
+        date: date,
+        timestamp: timestamp,
+        mealType: '-',
+        food: 'ادرار',
+        quantity: parseFloat(urineAmount.toFixed(2)),
+        unit: 'میلی‌لیتر',
+        sodium: 0,
+        potassium: 0,
+        phosphorus: 0,
+        protein: 0,
+        water: 0,
+        urine: parseFloat(urineAmount.toFixed(2))
+      };
+
+      intakeHistory.push(intake);
+      saveData();
+      displayIntakeHistory();
+      updateDashboard();
+
+      urineAmountInput.value = '';
+    }
+
+    function calculateDailyUrineOutput() {
+      const now = new Date().getTime();
+      const oneDayInMs = 24 * 60 * 60 * 1000;
+      const recentUrine = intakeHistory.filter(item => {
+        return item.type === 'urine' && (now - item.timestamp) <= oneDayInMs;
+      });
+      return parseFloat(recentUrine.reduce((sum, item) => sum + (item.urine || 0), 0).toFixed(2));
+    }
+
+    function displayIntakeHistory() {
+      const intakeTableBody = document.getElementById('intakeTableBody');
+      if (!intakeTableBody) return;
+      intakeTableBody.innerHTML = '';
+      intakeHistory.forEach((intake, index) => {
+        const table = document.createElement('table');
+        table.innerHTML = `
+          <thead>
+            <tr><th>پارامتر</th><th>مقدار</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>تاریخ</td><td>${intake.date || '-'}</td></tr>
+            <tr><td>نوع</td><td>${intake.type === 'food' ? intake.mealType : (intake.type === 'water' ? 'آب' : 'ادرار')}</td></tr>
+            <tr><td>غذا/آب/ادرار</td><td>${intake.food || '-'}</td></tr>
+            <tr><td>مقدار</td><td>${intake.quantity || 0} ${intake.unit || ''}</td></tr>
+            <tr><td>سدیم (میلی‌گرم)</td><td>${(intake.sodium || 0).toFixed(2)}</td></tr>
+            <tr><td>پتاسیم (میلی‌گرم)</td><td>${(intake.potassium || 0).toFixed(2)}</td></tr>
+            <tr><td>فسفر (میلی‌گرم)</td><td>${(intake.phosphorus || 0).toFixed(2)}</td></tr>
+            <tr><td>پروتئین (گرم)</td><td>${(intake.protein || 0).toFixed(2)}</td></tr>
+            <tr><td>آب (میلی‌لیتر)</td><td>${(intake.water || 0).toFixed(2)}</td></tr>
+            <tr><td>ادرار (میلی‌لیتر)</td><td>${(intake.urine || 0).toFixed(2)}</td></tr>
+            <tr><td>عملیات</td><td><button class="delete-button" onclick="deleteIntake(${index})"><img src="https://sanaeih1.github.io/Dialysis11/assets/trash.png" alt="trash"> حذف</button></td></tr>
+          </tbody>
+        `;
+        intakeTableBody.appendChild(table);
+      });
+    }
+
+    function deleteIntake(index) {
+      intakeHistory.splice(index, 1);
+      saveData();
+      displayIntakeHistory();
+      updateDashboard();
+    }
+
+    function deleteAllIntakes() {
+      if (confirm('آیا مطمئن هستید که می‌خواهید همه اطلاعات ثبت‌شده را حذف کنید؟')) {
+        intakeHistory = [];
+        saveData();
+        displayIntakeHistory();
+        updateDashboard();
+      }
+    }
+
+    function displayLimits() {
+      const sodiumLimitDisplay = document.getElementById('sodiumLimitDisplayMg');
+      const potassiumLimitDisplay = document.getElementById('potassiumLimitDisplayMg');
+      const phosphorusLimitDisplay = document.getElementById('phosphorusLimitDisplayMg');
+      const proteinLimitDisplay = document.getElementById('proteinLimitDisplayMg');
+      const waterLimitDisplay = document.getElementById('waterLimitDisplayMl');
+      if (sodiumLimitDisplay) sodiumLimitDisplay.textContent = limits.sodium.toFixed(2);
+      if (potassiumLimitDisplay) potassiumLimitDisplay.textContent = limits.potassium.toFixed(2);
+      if (phosphorusLimitDisplay) phosphorusLimitDisplay.textContent = limits.phosphorus.toFixed(2);
+      if (proteinLimitDisplay) proteinLimitDisplay.textContent = limits.protein.toFixed(2);
+      if (waterLimitDisplay) waterLimitDisplay.textContent = limits.water.toFixed(2);
+
+      const sodiumLimitInput = document.getElementById('sodiumLimit');
+      const potassiumLimitInput = document.getElementById('potassiumLimit');
+      const phosphorusLimitInput = document.getElementById('phosphorusLimit');
+      const proteinLimitInput = document.getElementById('proteinLimit');
+      const waterLimitInput = document.getElementById('waterLimit');
+      if (sodiumLimitInput) sodiumLimitInput.value = limits.sodium.toFixed(2);
+      if (potassiumLimitInput) potassiumLimitInput.value = limits.potassium.toFixed(2);
+      if (phosphorusLimitInput) phosphorusLimitInput.value = limits.phosphorus.toFixed(2);
+      if (proteinLimitInput) proteinLimitInput.value = limits.protein.toFixed(2);
+      if (waterLimitInput) waterLimitInput.value = limits.water.toFixed(2);
+    }
+
+    function updateDashboard() {
+      const now = new Date().getTime();
+      const oneDayInMs = 24 * 60 * 60 * 1000;
+      const recentIntakes = intakeHistory.filter(item => {
+        return (now - item.timestamp) <= oneDayInMs;
+      });
+
+      const totals = recentIntakes.reduce((acc, item) => {
+        acc.sodium += item.sodium || 0;
+        acc.potassium += item.potassium || 0;
+        acc.phosphorus += item.phosphorus || 0;
+        acc.protein += item.protein || 0;
+        acc.water += item.water || 0;
+        return acc;
+      }, { sodium: 0, potassium: 0, phosphorus: 0, protein: 0, water: 0 });
+
+      const totalSodiumMg = document.getElementById('totalSodiumMg');
+      const totalPotassiumMg = document.getElementById('totalPotassiumMg');
+      const totalPhosphorusMg = document.getElementById('totalPhosphorusMg');
+      const totalProteinMg = document.getElementById('totalProteinMg');
+      const totalWaterMl = document.getElementById('totalWaterMl');
+      if (totalSodiumMg) totalSodiumMg.textContent = totals.sodium.toFixed(2);
+      if (totalPotassiumMg) totalPotassiumMg.textContent = totals.potassium.toFixed(2);
+      if (totalPhosphorusMg) totalPhosphorusMg.textContent = totals.phosphorus.toFixed(2);
+      if (totalProteinMg) totalProteinMg.textContent = totals.protein.toFixed(2);
+      if (totalWaterMl) totalWaterMl.textContent = totals.water.toFixed(2);
+
+      const dailyUrine = calculateDailyUrineOutput();
+      const dailyUrineOutput = document.getElementById('dailyUrineOutput');
+      if (dailyUrineOutput) dailyUrineOutput.textContent = dailyUrine.toFixed(2);
+
+      const warningsDiv = document.getElementById('warnings');
+      if (warningsDiv) warningsDiv.innerHTML = '';
+
+      updateChart('sodiumChart', 'سدیم', totals.sodium, limits.sodium, 'میلی‌گرم');
+      updateChart('potassiumChart', 'پتاسیم', totals.potassium, limits.potassium, 'میلی‌گرم');
+      updateChart('phosphorusChart', 'فسفر', totals.phosphorus, limits.phosphorus, 'میلی‌گرم');
+      updateChart('proteinChart', 'پروتئین', totals.protein, limits.protein, 'گرم');
+      updateChart('waterChart', 'آب', totals.water, limits.water, 'میلی‌لیتر');
+    }
+
+    function updateChart(chartId, label, consumed, limit, unit) {
+      const canvas = document.getElementById(chartId);
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const percentage = Math.min((consumed / limit) * 100, 100);
+      const remaining = Math.max(limit - consumed, 0);
+
+      if (charts[chartId]) {
+        charts[chartId].destroy();
+      }
+
+      charts[chartId] = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: [`${label} مصرف‌شده (${unit})`, `${label} باقی‌مانده (${unit})`],
+          datasets: [{
+            data: [consumed, remaining],
+            backgroundColor: ['#42a5f5', '#e0e0e0'],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: {
+                  size: parseInt(getComputedStyle(document.documentElement).fontSize)
+                }
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const value = context.raw;
+                  return `${context.label}: ${value.toFixed(2)} ${context.label.includes('میلی‌گرم') ? 'میلی‌گرم' : context.label.includes('گرم') ? 'گرم' : 'میلی‌لیتر'}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('https://sanaeih1.github.io/Dialysis11/service-worker.js?v=11').then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,2331 @@
+[
+  {
+    "name": "مرغ",
+    "category": "گوشت و فرآورده‌های گوشتی",
+    "sodium": 74,
+    "potassium": 256,
+    "phosphorus": 228,
+    "calcium": 15,
+    "water": 65,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک تکه سینه مرغ (حدود 100 گرم)"
+  },
+  {
+    "name": "سیب",
+    "category": "میوه‌ها",
+    "sodium": 2,
+    "potassium": 195,
+    "phosphorus": 20,
+    "calcium": 11,
+    "water": 155,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 182 گرم)"
+  },
+  {
+    "name": "پرتقال",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 181,
+    "phosphorus": 14,
+    "calcium": 40,
+    "water": 86.75,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 131 گرم)"
+  },
+  {
+    "name": "گریپ فروت",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 135,
+    "phosphorus": 18,
+    "calcium": 22,
+    "water": 88.06,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 230 گرم)"
+  },
+  {
+    "name": "نارنگی",
+    "category": "میوه‌ها",
+    "sodium": 2,
+    "potassium": 166,
+    "phosphorus": 20,
+    "calcium": 37,
+    "water": 85.17,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو عدد متوسط (حدود 150 گرم)"
+  },
+  {
+    "name": "موز",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 358,
+    "phosphorus": 22,
+    "calcium": 5,
+    "water": 74.91,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف موز متوسط (حدود 60 گرم)"
+  },
+  {
+    "name": "زردآلو",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 259,
+    "phosphorus": 23,
+    "calcium": 13,
+    "water": 86.35,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "سه عدد (حدود 105 گرم)"
+  },
+  {
+    "name": "هلو",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 190,
+    "phosphorus": 20,
+    "calcium": 6,
+    "water": 88.87,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 150 گرم)"
+  },
+  {
+    "name": "شلیل",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 190,
+    "phosphorus": 20,
+    "calcium": 6,
+    "water": 87,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 140 گرم)"
+  },
+  {
+    "name": "آلو",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 157,
+    "phosphorus": 16,
+    "calcium": 6,
+    "water": 87.23,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو عدد متوسط (حدود 130 گرم)"
+  },
+  {
+    "name": "کیوی",
+    "category": "میوه‌ها",
+    "sodium": 3,
+    "potassium": 312,
+    "phosphorus": 34,
+    "calcium": 34,
+    "water": 83,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 76 گرم)"
+  },
+  {
+    "name": "توت فرنگی",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 153,
+    "phosphorus": 24,
+    "calcium": 16,
+    "water": 90.95,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 150 گرم)"
+  },
+  {
+    "name": "گیلاس و آلبالو",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 222,
+    "phosphorus": 21,
+    "calcium": 13,
+    "water": 82.25,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 150 گرم)"
+  },
+  {
+    "name": "انگور",
+    "category": "میوه‌ها",
+    "sodium": 2,
+    "potassium": 191,
+    "phosphorus": 20,
+    "calcium": 10,
+    "water": 81,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 151 گرم)"
+  },
+  {
+    "name": "توت",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 194,
+    "phosphorus": 38,
+    "calcium": 39,
+    "water": 85,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 140 گرم)"
+  },
+  {
+    "name": "سیاه توت",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 162,
+    "phosphorus": 22,
+    "calcium": 29,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 140 گرم)"
+  },
+  {
+    "name": "بلوبری",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 77,
+    "phosphorus": 12,
+    "calcium": 6,
+    "water": 84.21,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 74 گرم)"
+  },
+  {
+    "name": "خرمالو",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 161,
+    "phosphorus": 17,
+    "calcium": 8,
+    "water": 80,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 168 گرم)"
+  },
+  {
+    "name": "انجیر",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 232,
+    "phosphorus": 14,
+    "calcium": 35,
+    "water": 79.11,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو عدد متوسط (حدود 100 گرم)"
+  },
+  {
+    "name": "به",
+    "category": "میوه‌ها",
+    "sodium": 4,
+    "potassium": 197,
+    "phosphorus": 17,
+    "calcium": 11,
+    "water": 83.8,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف به متوسط (حدود 92 گرم)"
+  },
+  {
+    "name": "آلبالو",
+    "category": "میوه‌ها",
+    "sodium": 0,
+    "potassium": 173,
+    "phosphorus": 15,
+    "calcium": 16,
+    "water": 86.13,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 150 گرم)"
+  },
+  {
+    "name": "گلابی",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 116,
+    "phosphorus": 12,
+    "calcium": 9,
+    "water": 83.96,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک گلابی متوسط (حدود 178 گرم)"
+  },
+  {
+    "name": "آناناس",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 109,
+    "phosphorus": 8,
+    "calcium": 13,
+    "water": 86,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان خرد شده (حدود 165 گرم)"
+  },
+  {
+    "name": "انار",
+    "category": "میوه‌ها",
+    "sodium": 3,
+    "potassium": 236,
+    "phosphorus": 36,
+    "calcium": 10,
+    "water": 77.93,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف انار متوسط (حدود 87 گرم)"
+  },
+  {
+    "name": "طالبی",
+    "category": "میوه‌ها",
+    "sodium": 16,
+    "potassium": 267,
+    "phosphorus": 15,
+    "calcium": 9,
+    "water": 90.15,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 160 گرم)"
+  },
+  {
+    "name": "گرمَک",
+    "category": "میوه‌ها",
+    "sodium": 16,
+    "potassium": 267,
+    "phosphorus": 15,
+    "calcium": 9,
+    "water": 90,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 160 گرم)"
+  },
+  {
+    "name": "هندوانه",
+    "category": "میوه‌ها",
+    "sodium": 1,
+    "potassium": 112,
+    "phosphorus": 11,
+    "calcium": 7,
+    "water": 91.45,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 154 گرم)"
+  },
+  {
+    "name": "لیموترش",
+    "category": "میوه‌ها",
+    "sodium": 2,
+    "potassium": 138,
+    "phosphorus": 16,
+    "calcium": 26,
+    "water": 88.98,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 58 گرم)"
+  },
+  {
+    "name": "گوجه فرنگی",
+    "category": "سبزیجات",
+    "sodium": 5,
+    "potassium": 237,
+    "phosphorus": 24,
+    "calcium": 10,
+    "water": 94.5,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 123 گرم)"
+  },
+  {
+    "name": "خیار",
+    "category": "سبزیجات",
+    "sodium": 2,
+    "potassium": 147,
+    "phosphorus": 24,
+    "calcium": 16,
+    "water": 95.23,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان خرد شده (حدود 119 گرم)"
+  },
+  {
+    "name": "خیارشور",
+    "category": "غذاهای آماده و کنسروی",
+    "sodium": 1208,
+    "potassium": 23,
+    "phosphorus": 14,
+    "calcium": 57,
+    "water": 95,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "زیاد",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو عدد متوسط (حدود 70 گرم)"
+  },
+  {
+    "name": "هویج",
+    "category": "سبزیجات",
+    "sodium": 69,
+    "potassium": 320,
+    "phosphorus": 35,
+    "calcium": 33,
+    "water": 88.29,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان خرد شده (حدود 128 گرم)"
+  },
+  {
+    "name": "سیب زمینی پخته",
+    "category": "سبزیجات",
+    "sodium": 10,
+    "potassium": 535,
+    "phosphorus": 70,
+    "calcium": 15,
+    "water": 78.96,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 173 گرم)"
+  },
+  {
+    "name": "پیاز",
+    "category": "سبزیجات",
+    "sodium": 4,
+    "potassium": 146,
+    "phosphorus": 29,
+    "calcium": 23,
+    "water": 89.11,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف پیاز متوسط (حدود 55 گرم)"
+  },
+  {
+    "name": "سیر",
+    "category": "سبزیجات",
+    "sodium": 17,
+    "potassium": 401,
+    "phosphorus": 153,
+    "calcium": 181,
+    "water": 58.58,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک حبه سیر (حدود 3 گرم)"
+  },
+  {
+    "name": "فلفل دلمه ای",
+    "category": "سبزیجات",
+    "sodium": 3,
+    "potassium": 175,
+    "phosphorus": 20,
+    "calcium": 7,
+    "water": 92,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فلفل دلمه ای متوسط (حدود 60 گرم)"
+  },
+  {
+    "name": "فلفل تند",
+    "category": "سبزیجات",
+    "sodium": 9,
+    "potassium": 322,
+    "phosphorus": 43,
+    "calcium": 14,
+    "water": 88,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 45 گرم)"
+  },
+  {
+    "name": "کدو سبز پخته",
+    "category": "سبزیجات",
+    "sodium": 1,
+    "potassium": 459,
+    "phosphorus": 44,
+    "calcium": 18,
+    "water": 94,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 180 گرم)"
+  },
+  {
+    "name": "قارچ",
+    "category": "سبزیجات",
+    "sodium": 5,
+    "potassium": 318,
+    "phosphorus": 86,
+    "calcium": 3,
+    "water": 92,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 96 گرم)"
+  },
+  {
+    "name": "کاهو",
+    "category": "سبزیجات",
+    "sodium": 28,
+    "potassium": 194,
+    "phosphorus": 29,
+    "calcium": 36,
+    "water": 95,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 36 گرم)"
+  },
+  {
+    "name": "کلم پیچ",
+    "category": "سبزیجات",
+    "sodium": 38,
+    "potassium": 447,
+    "phosphorus": 92,
+    "calcium": 150,
+    "water": 89.63,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 67 گرم)"
+  },
+  {
+    "name": "گل کلم",
+    "category": "سبزیجات",
+    "sodium": 30,
+    "potassium": 299,
+    "phosphorus": 44,
+    "calcium": 22,
+    "water": 92,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 100 گرم)"
+  },
+  {
+    "name": "کلم قرمز",
+    "category": "سبزیجات",
+    "sodium": 27,
+    "potassium": 243,
+    "phosphorus": 30,
+    "calcium": 45,
+    "water": 90.39,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 89 گرم)"
+  },
+  {
+    "name": "کلم بروکلی",
+    "category": "سبزیجات",
+    "sodium": 33,
+    "potassium": 316,
+    "phosphorus": 66,
+    "calcium": 47,
+    "water": 89,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 91 گرم)"
+  },
+  {
+    "name": "اسفناج",
+    "category": "سبزیجات",
+    "sodium": 79,
+    "potassium": 558,
+    "phosphorus": 49,
+    "calcium": 99,
+    "water": 91.4,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 30 گرم)"
+  },
+  {
+    "name": "شلغم آبپز",
+    "category": "سبزیجات",
+    "sodium": 16,
+    "potassium": 177,
+    "phosphorus": 26,
+    "calcium": 30,
+    "water": 94,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 156 گرم)"
+  },
+  {
+    "name": "لوبیا سبز آبپز",
+    "category": "سبزیجات",
+    "sodium": 6,
+    "potassium": 211,
+    "phosphorus": 38,
+    "calcium": 37,
+    "water": 90,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 125 گرم)"
+  },
+  {
+    "name": "نخود فرنگی آبپز",
+    "category": "غلات و حبوبات",
+    "sodium": 3,
+    "potassium": 271,
+    "phosphorus": 117,
+    "calcium": 25,
+    "water": 78,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 160 گرم)"
+  },
+  {
+    "name": "باقالی آبپز",
+    "category": "غلات و حبوبات",
+    "sodium": 5,
+    "potassium": 268,
+    "phosphorus": 125,
+    "calcium": 36,
+    "water": 72,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 170 گرم)"
+  },
+  {
+    "name": "کنگر آبپز",
+    "category": "سبزیجات",
+    "sodium": 94,
+    "potassium": 353,
+    "phosphorus": 73,
+    "calcium": 44,
+    "water": 84,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 120 گرم)"
+  },
+  {
+    "name": "چغندر آبپز",
+    "category": "سبزیجات",
+    "sodium": 77,
+    "potassium": 305,
+    "phosphorus": 38,
+    "calcium": 16,
+    "water": 87,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 75 گرم)"
+  },
+  {
+    "name": "لوبیا سبز آبپز",
+    "category": "سبزیجات",
+    "sodium": 3,
+    "potassium": 106,
+    "phosphorus": 19,
+    "calcium": 18.5,
+    "water": 45,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 62.5 گرم)"
+  },
+  {
+    "name": "نخود فرنگی آبپز",
+    "category": "غلات و حبوبات",
+    "sodium": 1.5,
+    "potassium": 135.5,
+    "phosphorus": 58.5,
+    "calcium": 12.5,
+    "water": 39,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 80 گرم)"
+  },
+  {
+    "name": "باقالی آبپز",
+    "category": "غلات و حبوبات",
+    "sodium": 2.5,
+    "potassium": 134,
+    "phosphorus": 62.5,
+    "calcium": 18,
+    "water": 36,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "کنگر آبپز",
+    "category": "سبزیجات",
+    "sodium": 47,
+    "potassium": 176.5,
+    "phosphorus": 36.5,
+    "calcium": 22,
+    "water": 42,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 60 گرم)"
+  },
+  {
+    "name": "بامیه",
+    "category": "سبزیجات",
+    "sodium": 7,
+    "potassium": 299,
+    "phosphorus": 61,
+    "calcium": 81,
+    "water": 90,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 100 گرم)"
+  },
+  {
+    "name": "کرفس",
+    "category": "سبزیجات",
+    "sodium": 80,
+    "potassium": 260,
+    "phosphorus": 24,
+    "calcium": 40,
+    "water": 95,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "چند ساقه (حدود 100 گرم)"
+  },
+  {
+    "name": "پیازچه",
+    "category": "سبزیجات",
+    "sodium": 16,
+    "potassium": 276,
+    "phosphorus": 37,
+    "calcium": 72,
+    "water": 90,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان خرد شده (حدود 50 گرم)"
+  },
+  {
+    "name": "تره فرنگی",
+    "category": "سبزیجات",
+    "sodium": 20,
+    "potassium": 180,
+    "phosphorus": 35,
+    "calcium": 59,
+    "water": 83,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان خرد شده (حدود 100 گرم)"
+  },
+  {
+    "name": "تره",
+    "category": "سبزیجات",
+    "sodium": 3,
+    "potassium": 296,
+    "phosphorus": 58,
+    "calcium": 81,
+    "water": 85,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 100 گرم)"
+  },
+  {
+    "name": "جعفری",
+    "category": "سبزیجات",
+    "sodium": 56,
+    "potassium": 554,
+    "phosphorus": 58,
+    "calcium": 138,
+    "water": 87,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 60 گرم)"
+  },
+  {
+    "name": "شاهی",
+    "category": "سبزیجات",
+    "sodium": 41,
+    "potassium": 606,
+    "phosphorus": 76,
+    "calcium": 120,
+    "water": 95,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 34 گرم)"
+  },
+  {
+    "name": "ریحان",
+    "category": "سبزیجات",
+    "sodium": 4,
+    "potassium": 295,
+    "phosphorus": 56,
+    "calcium": 177,
+    "water": 92,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 15 گرم)"
+  },
+  {
+    "name": "شنبلیله",
+    "category": "سبزیجات",
+    "sodium": 67,
+    "potassium": 770,
+    "phosphorus": 296,
+    "calcium": 176,
+    "water": 88,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 30 گرم)"
+  },
+  {
+    "name": "ترخون خشک",
+    "category": "سبزیجات",
+    "sodium": 62,
+    "potassium": 302,
+    "phosphorus": 31,
+    "calcium": 114,
+    "water": 7.74,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 3 گرم)"
+  },
+  {
+    "name": "نعناع",
+    "category": "سبزیجات",
+    "sodium": 31,
+    "potassium": 569,
+    "phosphorus": 73,
+    "calcium": 243,
+    "water": 86,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 15 گرم)"
+  },
+  {
+    "name": "برنج پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 1,
+    "potassium": 35,
+    "phosphorus": 43,
+    "calcium": 10,
+    "water": 68.44,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 90 گرم)"
+  },
+  {
+    "name": "برنج قهوه‌ای پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 5,
+    "potassium": 43,
+    "phosphorus": 77,
+    "calcium": 10,
+    "water": 70,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 90 گرم)"
+  },
+  {
+    "name": "نان سنگک",
+    "category": "غلات و حبوبات",
+    "sodium": 490,
+    "potassium": 126,
+    "phosphorus": 98,
+    "calcium": 20,
+    "water": 37,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 30 گرم)"
+  },
+  {
+    "name": "نان تافتون",
+    "category": "غلات و حبوبات",
+    "sodium": 490,
+    "potassium": 119,
+    "phosphorus": 98,
+    "calcium": 20,
+    "water": 35,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 30 گرم)"
+  },
+  {
+    "name": "نان لواش",
+    "category": "غلات و حبوبات",
+    "sodium": 490,
+    "potassium": 115,
+    "phosphorus": 98,
+    "calcium": 20,
+    "water": 33,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 25 گرم)"
+  },
+  {
+    "name": "نان بربری",
+    "category": "غلات و حبوبات",
+    "sodium": 500,
+    "potassium": 120,
+    "phosphorus": 98,
+    "calcium": 20,
+    "water": 36,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 30 گرم)"
+  },
+  {
+    "name": "نان باگت",
+    "category": "غلات و حبوبات",
+    "sodium": 510,
+    "potassium": 113,
+    "phosphorus": 96,
+    "calcium": 20,
+    "water": 34,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 30 گرم)"
+  },
+  {
+    "name": "نان تست",
+    "category": "غلات و حبوبات",
+    "sodium": 511,
+    "potassium": 115,
+    "phosphorus": 98,
+    "calcium": 20,
+    "water": 35,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کف دست (حدود 25 گرم)"
+  },
+  {
+    "name": "بلغور گندم پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 5,
+    "potassium": 68,
+    "phosphorus": 40,
+    "calcium": 10,
+    "water": 76,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 90 گرم)"
+  },
+  {
+    "name": "جو پرک پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 6,
+    "potassium": 70,
+    "phosphorus": 77,
+    "calcium": 10,
+    "water": 84,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 80 گرم)"
+  },
+  {
+    "name": "جو دوسر پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 2,
+    "potassium": 70,
+    "phosphorus": 77,
+    "calcium": 10,
+    "water": 84,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 80 گرم)"
+  },
+  {
+    "name": "ذرت",
+    "category": "غلات و حبوبات",
+    "sodium": 15,
+    "potassium": 270,
+    "phosphorus": 89,
+    "calcium": 2,
+    "water": 76,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 165 گرم)"
+  },
+  {
+    "name": "کینوا پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 7,
+    "potassium": 172,
+    "phosphorus": 152,
+    "calcium": 17,
+    "water": 72,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 90 گرم)"
+  },
+  {
+    "name": "گندم کامل پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 2,
+    "potassium": 135,
+    "phosphorus": 132,
+    "calcium": 13,
+    "water": 62,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 90 گرم)"
+  },
+  {
+    "name": "پاستا پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 1,
+    "potassium": 44,
+    "phosphorus": 58,
+    "calcium": 7,
+    "water": 62,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 75 گرم)"
+  },
+  {
+    "name": "نخود پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 7,
+    "potassium": 291,
+    "phosphorus": 168,
+    "calcium": 49,
+    "water": 60.2,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "لوبیا سفید پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 6,
+    "potassium": 561,
+    "phosphorus": 113,
+    "calcium": 69,
+    "water": 63,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "لوبیا قرمز پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 2,
+    "potassium": 403,
+    "phosphorus": 142,
+    "calcium": 28,
+    "water": 67,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "لوبیا چیتی پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 1,
+    "potassium": 455,
+    "phosphorus": 137,
+    "calcium": 61,
+    "water": 66,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "لپه پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 5,
+    "potassium": 710,
+    "phosphorus": 127,
+    "calcium": 55,
+    "water": 67,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "سویا پخته",
+    "category": "غلات و حبوبات",
+    "sodium": 1,
+    "potassium": 515,
+    "phosphorus": 245,
+    "calcium": 102,
+    "water": 62.6,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "نصف فنجان (حدود 85 گرم)"
+  },
+  {
+    "name": "بادام",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 1,
+    "potassium": 733,
+    "phosphorus": 481,
+    "calcium": 269,
+    "water": 4.4,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "متوسط",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "بادام هندی",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 12,
+    "potassium": 660,
+    "phosphorus": 593,
+    "calcium": 37,
+    "water": 5.2,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "متوسط",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "بادام زمینی",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 18,
+    "potassium": 705,
+    "phosphorus": 376,
+    "calcium": 92,
+    "water": 6.5,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "متوسط",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "پسته",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 1,
+    "potassium": 1025,
+    "phosphorus": 490,
+    "calcium": 105,
+    "water": 4.4,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "متوسط",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "فندق",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 0,
+    "potassium": 680,
+    "phosphorus": 290,
+    "calcium": 114,
+    "water": 5.3,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "گردو",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 2,
+    "potassium": 441,
+    "phosphorus": 346,
+    "calcium": 98,
+    "water": 4.1,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "چند عدد (حدود 30 گرم)"
+  },
+  {
+    "name": "تخم آفتابگردان",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 9,
+    "potassium": 645,
+    "phosphorus": 1155,
+    "calcium": 78,
+    "water": 4.7,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "زیاد",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "تخم کدو",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 18,
+    "potassium": 919,
+    "phosphorus": 920,
+    "calcium": 55,
+    "water": 4.5,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "زیاد",
+      "calcium": "کم"
+    },
+    "unit": "یک مشت (حدود 30 گرم)"
+  },
+  {
+    "name": "کنجد",
+    "category": "آجیل و دانه‌ها",
+    "sodium": 11,
+    "potassium": 468,
+    "phosphorus": 629,
+    "calcium": 975,
+    "water": 4.7,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "متوسط",
+      "calcium": "متوسط"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 9 گرم)"
+  },
+  {
+    "name": "ماهی",
+    "category": "گوشت و فرآورده‌های گوشتی",
+    "sodium": 61,
+    "potassium": 384,
+    "phosphorus": 254,
+    "calcium": 15,
+    "water": 70,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک تکه (حدود 100 گرم)"
+  },
+  {
+    "name": "گوشت گوساله",
+    "category": "گوشت و فرآورده‌های گوشتی",
+    "sodium": 68,
+    "potassium": 318,
+    "phosphorus": 200,
+    "calcium": 12,
+    "water": 71,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک تکه (حدود 100 گرم)"
+  },
+  {
+    "name": "تخم مرغ",
+    "category": "گوشت و فرآورده‌های گوشتی",
+    "sodium": 124,
+    "potassium": 138,
+    "phosphorus": 198,
+    "calcium": 56,
+    "water": 38.1,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد متوسط (حدود 50 گرم)"
+  },
+  {
+    "name": "شیر",
+    "category": "لبنیات",
+    "sodium": 44,
+    "potassium": 150,
+    "phosphorus": 91,
+    "calcium": 125,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک لیوان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "ماست",
+    "category": "لبنیات",
+    "sodium": 46,
+    "potassium": 155,
+    "phosphorus": 95,
+    "calcium": 121,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کاسه (حدود 200 گرم)"
+  },
+  {
+    "name": "پنیر",
+    "category": "لبنیات",
+    "sodium": 629,
+    "potassium": 76,
+    "phosphorus": 455,
+    "calcium": 710,
+    "water": 37,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "متوسط",
+      "calcium": "متوسط"
+    },
+    "unit": "یک برش (حدود 30 گرم)"
+  },
+  {
+    "name": "کره",
+    "category": "لبنیات",
+    "sodium": 643,
+    "potassium": 24,
+    "phosphorus": 24,
+    "calcium": 24,
+    "water": 16,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 14 گرم)"
+  },
+  {
+    "name": "خامه",
+    "category": "لبنیات",
+    "sodium": 38,
+    "potassium": 122,
+    "phosphorus": 60,
+    "calcium": 65,
+    "water": 58,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 15 گرم)"
+  },
+  {
+    "name": "عسل",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 4,
+    "potassium": 52,
+    "phosphorus": 4,
+    "calcium": 6,
+    "water": 17.1,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 21 گرم)"
+  },
+  {
+    "name": "شکر",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 1,
+    "potassium": 2,
+    "phosphorus": 0,
+    "calcium": 1,
+    "water": 0.02,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق چای‌خوری (حدود 4 گرم)"
+  },
+  {
+    "name": "مربا",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 32,
+    "potassium": 77,
+    "phosphorus": 19,
+    "calcium": 20,
+    "water": 30,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 20 گرم)"
+  },
+  {
+    "name": "کله پاچه",
+    "category": "گوشت و فرآورده‌های گوشتی",
+    "sodium": 95,
+    "potassium": 250,
+    "phosphorus": 180,
+    "calcium": 15,
+    "water": 65,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "100 گرم"
+  },
+  {
+    "name": "روغن زیتون",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 0.3,
+    "potassium": 0.1,
+    "phosphorus": 0,
+    "calcium": 0.1,
+    "water": 0,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 14 گرم)"
+  },
+  {
+    "name": "روغن آفتابگردان",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "calcium": 0,
+    "water": 0,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 14 گرم)"
+  },
+  {
+    "name": "رب گوجه فرنگی",
+    "category": "شیرینی و چاشنی‌ها",
+    "sodium": 98,
+    "potassium": 800,
+    "phosphorus": 83,
+    "calcium": 36,
+    "water": 73,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک قاشق غذاخوری (حدود 15 گرم)"
+  },
+  {
+    "name": "آب",
+    "category": "نوشیدنی‌ها",
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "calcium": 0,
+    "water": 240,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک لیوان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "چای سیاه",
+    "category": "نوشیدنی‌ها",
+    "sodium": 3,
+    "potassium": 37,
+    "phosphorus": 1,
+    "calcium": 0,
+    "water": 239.7,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "قهوه",
+    "category": "نوشیدنی‌ها",
+    "sodium": 2,
+    "potassium": 49,
+    "phosphorus": 3,
+    "calcium": 2,
+    "water": 238,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک فنجان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "دوغ",
+    "category": "نوشیدنی‌ها",
+    "sodium": 50,
+    "potassium": 140,
+    "phosphorus": 90,
+    "calcium": 120,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک لیوان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "آبمیوه طبیعی سیب",
+    "category": "نوشیدنی‌ها",
+    "sodium": 1,
+    "potassium": 101,
+    "phosphorus": 11,
+    "calcium": 8,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک لیوان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "آبمیوه طبیعی پرتقال",
+    "category": "نوشیدنی‌ها",
+    "sodium": 0,
+    "potassium": 200,
+    "phosphorus": 14,
+    "calcium": 11,
+    "water": 88,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک لیوان (حدود 240 میلی‌لیتر)"
+  },
+  {
+    "name": "شکلات تلخ",
+    "category": "تنقلات",
+    "sodium": 24,
+    "potassium": 559,
+    "phosphorus": 206,
+    "calcium": 56,
+    "water": 1.4,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک تکه (حدود 30 گرم)"
+  },
+  {
+    "name": "بیسکویت ساده",
+    "category": "تنقلات",
+    "sodium": 350,
+    "potassium": 100,
+    "phosphorus": 80,
+    "calcium": 30,
+    "water": 5,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "چند عدد (حدود 30 گرم)"
+  },
+  {
+    "name": "چیپس سیب زمینی",
+    "category": "تنقلات",
+    "sodium": 550,
+    "potassium": 1270,
+    "phosphorus": 150,
+    "calcium": 20,
+    "water": 2,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بسته کوچک (حدود 30 گرم)"
+  },
+  {
+    "name": "پفک",
+    "category": "تنقلات",
+    "sodium": 800,
+    "potassium": 130,
+    "phosphorus": 90,
+    "calcium": 20,
+    "water": 2,
+    "bloodSugarImpact": "زیاد",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بسته کوچک (حدود 30 گرم)"
+  },
+  {
+    "name": "خورشت قورمه سبزی",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 250,
+    "potassium": 350,
+    "phosphorus": 120,
+    "calcium": 80,
+    "water": 70,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 250 گرم)"
+  },
+  {
+    "name": "خورشت قیمه",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 200,
+    "potassium": 300,
+    "phosphorus": 100,
+    "calcium": 50,
+    "water": 72,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 250 گرم)"
+  },
+  {
+    "name": "کباب کوبیده",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 120,
+    "potassium": 320,
+    "phosphorus": 200,
+    "calcium": 20,
+    "water": 60,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو سیخ (حدود 150 گرم)"
+  },
+  {
+    "name": "جوجه کباب",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 90,
+    "potassium": 280,
+    "phosphorus": 200,
+    "calcium": 15,
+    "water": 65,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "دو سیخ (حدود 150 گرم)"
+  },
+  {
+    "name": "زرشک پلو با مرغ",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 150,
+    "potassium": 250,
+    "phosphorus": 150,
+    "calcium": 30,
+    "water": 60,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 250 گرم)"
+  },
+  {
+    "name": "باقالی پلو با گوشت",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 180,
+    "potassium": 300,
+    "phosphorus": 160,
+    "calcium": 40,
+    "water": 62,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 250 گرم)"
+  },
+  {
+    "name": "آش رشته",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 300,
+    "potassium": 400,
+    "phosphorus": 130,
+    "calcium": 70,
+    "water": 75,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "متوسط",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کاسه (حدود 200 گرم)"
+  },
+  {
+    "name": "حلیم",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 250,
+    "potassium": 200,
+    "phosphorus": 110,
+    "calcium": 50,
+    "water": 70,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کاسه (حدود 200 گرم)"
+  },
+  {
+    "name": "عدسی",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 200,
+    "potassium": 350,
+    "phosphorus": 150,
+    "calcium": 40,
+    "water": 68,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک کاسه (حدود 200 گرم)"
+  },
+  {
+    "name": "میرزا قاسمی",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 120,
+    "potassium": 280,
+    "phosphorus": 100,
+    "calcium": 30,
+    "water": 70,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 200 گرم)"
+  },
+  {
+    "name": "کشک بادمجان",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 200,
+    "potassium": 250,
+    "phosphorus": 120,
+    "calcium": 80,
+    "water": 65,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 200 گرم)"
+  },
+  {
+    "name": "دلمه برگ مو",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 150,
+    "potassium": 300,
+    "phosphorus": 90,
+    "calcium": 50,
+    "water": 70,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "چند عدد (حدود 150 گرم)"
+  },
+  {
+    "name": "دلمه فلفل",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 140,
+    "potassium": 320,
+    "phosphorus": 100,
+    "calcium": 40,
+    "water": 72,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک عدد (حدود 150 گرم)"
+  },
+  {
+    "name": "کوکو سبزی",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 100,
+    "potassium": 250,
+    "phosphorus": 80,
+    "calcium": 60,
+    "water": 65,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک برش (حدود 100 گرم)"
+  },
+  {
+    "name": "کوکو سیب زمینی",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 120,
+    "potassium": 400,
+    "phosphorus": 120,
+    "calcium": 30,
+    "water": 60,
+    "bloodSugarImpact": "متوسط",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "متوسط",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک برش (حدود 100 گرم)"
+  },
+  {
+    "name": "املت",
+    "category": "غذاهای سنتی ایرانی",
+    "sodium": 150,
+    "potassium": 200,
+    "phosphorus": 150,
+    "calcium": 50,
+    "water": 70,
+    "bloodSugarImpact": "کم",
+    "restrictions": {
+      "sodium": "کم",
+      "potassium": "کم",
+      "phosphorus": "کم",
+      "calcium": "کم"
+    },
+    "unit": "یک بشقاب (حدود 150 گرم)"
+  }
+]
